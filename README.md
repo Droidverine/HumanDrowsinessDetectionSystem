@@ -24,3 +24,6 @@ Following are list of Objectives:
 • Keep track of the speed of car to aviod any accidents.
 • Keep track of the car gps location.
 • In case of any accident alert the neardy hospitals.
+
+
+updated on january 11th, 2019 
