@@ -49,7 +49,7 @@ if args["alarm"] > 0:
 	th = TrafficHat()
 	print("[INFO] using TrafficHat alarm...")
  
-# define two constants, one for the eye aspect ratio to indicate
+# define two constants, one for the eye aspect ratio to indicate.
 # blink and then a second constant for the number of consecutive
 # frames the eye must be below the threshold for to set off the
 # alarm
