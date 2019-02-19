@@ -5,12 +5,27 @@
 # import the necessary packages
 from imutils.video import VideoStream
 from imutils import face_utils
+import pyrebase
 import numpy as np
 import argparse
 import imutils
 import time
 import dlib
 import cv2
+
+
+config = {
+    "apiKey": "AIzaSyAkyScquIYYbKKbN2nFP0cVKuGQH-3tm_M",
+    "authDomain": "hdds-e8fe9.firebaseapp.com",
+    "databaseURL": "https://hdds-e8fe9.firebaseio.com",
+    "projectId": "hdds-e8fe9",
+    "storageBucket": "hdds-e8fe9.appspot.com",
+    "messagingSenderId": "982447504454"
+  }
+
+firebase =  pyrebase.initialize_app(config)
+
+db= firebase.database();
 
 def euclidean_dist(ptA, ptB):
 	# compute and return the euclidean distance between the two
@@ -60,6 +75,7 @@ EYE_AR_CONSEC_FRAMES = 16
 # indicate if the alarm is going off
 COUNTER = 0
 ALARM_ON = False
+COUNTERCHECK=0
 
 # load OpenCV's Haar cascade for face detection (which is faster than
 # dlib's built-in HOG detector, but less accurate), then create the
@@ -134,6 +150,21 @@ while True:
 				# if the alarm is not on, turn it on
 				if not ALARM_ON:
 					ALARM_ON = True
+					COUNTERCHECK=COUNTERCHECK + 1
+
+
+
+					if COUNTERCHECK>= 3:
+						COUNTERCHECK=0
+						db.child("blink").push({"dsplayName": "displayName",
+                        "email": "email",
+                        "photoUrl": "photoUrl",
+                        "emailVerified": "emailVerified" });
+
+                    
+                 
+                       
+                    
 
 					# check to see if the TrafficHat buzzer should
 					# be sounded
