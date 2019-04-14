@@ -69,7 +69,7 @@ if args["alarm"] > 0:
 # frames the eye must be below the threshold for to set off the
 # alarm
 EYE_AR_THRESH = 0.3
-EYE_AR_CONSEC_FRAMES = 16
+EYE_AR_CONSEC_FRAMES = 8
 
 # initialize the frame counter as well as a boolean used to
 # indicate if the alarm is going off
