@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegisterActivity">
+    <RelativeLayout
+        android:id = "@+id/login_layout"
+        android:gravity="center"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:visibility = "visible"
+        android:padding = "16dp"
+        android:layout_centerHorizontal = "true"
+        android:layout_centerInParent = "true">
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id = "@+id/email_til"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_marginLeft = "12dp"
+            android:layout_marginRight = "12dp"
+            android:padding = "6dp" >
+
+            <EditText
+                android:id = "@+id/signupemail"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:ems = "10"
+                android:hint = "Email"
+                android:inputType = "textEmailAddress" />
+
+        </android.support.design.widget.TextInputLayout >
+
+        <android.support.design.widget.TextInputLayout
+            android:id = "@+id/password_til"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_below = "@id/email_til"
+            android:layout_marginLeft = "12dp"
+            android:layout_marginRight = "12dp"
+
+            android:padding = "6dp"
+            app:passwordToggleEnabled = "true" >
+
+            <EditText
+                android:id = "@+id/signuppassword"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:ems = "10"
+                android:hint = "Password"
+                android:inputType = "textPassword" />
+
+        </android.support.design.widget.TextInputLayout >
+        <android.support.design.widget.TextInputLayout
+            android:id = "@+id/model_til"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_below = "@id/password_til"
+            android:layout_marginLeft = "12dp"
+            android:layout_marginRight = "12dp"
+
+            android:padding = "6dp"
+            app:passwordToggleEnabled = "true" >
+
+            <EditText
+                android:id = "@+id/cardmodeledt"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:ems = "10"
+                android:hint = "Car Model"
+               />
+
+        </android.support.design.widget.TextInputLayout >
+        <android.support.design.widget.TextInputLayout
+            android:id = "@+id/number_til"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_below = "@id/model_til"
+            android:layout_marginLeft = "12dp"
+            android:layout_marginRight = "12dp"
+            android:padding = "6dp"
+          >
+
+            <EditText
+                android:id = "@+id/carnumberedt"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:ems = "12"
+                android:hint = "Car Number"
+                />
+
+        </android.support.design.widget.TextInputLayout >
+        <TextView
+            android:id="@+id/existacctxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft = "12dp"
+            android:layout_marginRight = "12dp"
+
+            android:padding = "6dp"
+            android:textColor="@color/colorAccent"
+            android:text="Already have an account?"
+            android:layout_below="@+id/number_til"/>
+        <Button
+            android:id = "@+id/signup_btn"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_alignEnd = "@+id/number_til"
+            android:layout_below = "@+id/number_til"
+            android:layout_marginLeft = "12dp"
+            android:text = "Register"
+            android:textSize = "18sp" />
+
+
+
+
+
+        <ProgressBar
+            android:id = "@+id/login_progress"
+            android:layout_width = "30dp"
+            android:layout_height = "30dp"
+            android:layout_below = "@id/login_btn"
+            android:layout_centerHorizontal = "true"
+            android:visibility = "invisible" />
+
+    </RelativeLayout >
+
+</android.support.constraint.ConstraintLayout>

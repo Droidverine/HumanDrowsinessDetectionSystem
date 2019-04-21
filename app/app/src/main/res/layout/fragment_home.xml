@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/carinner" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:paddingTop="16sp"
+            android:paddingBottom="16sp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Car"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="36dp"
+            android:padding="4dp"
+            android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/carmodel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Hyundai Verna"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MH02BD"
+            android:id="@+id/carnumber"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6754"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mapbtn"
+            android:text="View on map"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_margin="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car Status:\n Running"
+                android:textSize="16sp"
+                android:id="@+id/carsts"
+                android:paddingStart="16sp"
+                android:textAlignment="center"
+                android:paddingEnd="16sp"
+
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
