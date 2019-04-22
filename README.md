@@ -21,3 +21,6 @@ An IOT/ Android based project where we ensure the safety of car drivers,by detec
 
 ```
 
+Link to Comapnion App demo:
+https://play.google.com/store/apps/details?id=com.droidverine.hdds.hdds
+
