@@ -6,7 +6,6 @@ An IOT/ Android based project where we ensure the safety of car drivers,by detec
 – Raspberry pi 3
 – Raspberry Pi Camera module
 – Gps/Gprs module (PAM-7Q)
-– Accelerometer sensor (GY-521)
 – Node mcu
 
 ```
