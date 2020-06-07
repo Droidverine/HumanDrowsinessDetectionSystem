@@ -19,6 +19,8 @@ An IOT/ Android based project where we ensure the safety of car drivers,by detec
 • In case of any accident alert the neardy hospitals.
 
 ```
+Link to research paper:
+https://www.ijeat.org/wp-content/uploads/papers/v8i4/D6104048419.pdf
 
 Link to Comapnion App demo:
 https://play.google.com/store/apps/details?id=com.droidverine.hdds.hdds
